@@ -8,6 +8,14 @@ package Parcial2;
  *
  * @author User
  */
-public class ContenidoMultimedia {
+abstract public class ContenidoMultimedia {
+    String titulo;
+    int duracionMinutos;
+    int anioLanzamiento;
     
+    public abstract void iniciarReproduccion();
+    
+    String obtenerResumen(){
+        return ("Titulo: "+ titulo + "Anio de lanzamiento: " + anioLanzamiento);
+    }
 }
