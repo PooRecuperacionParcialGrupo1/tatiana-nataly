@@ -10,6 +10,7 @@ package Parcial2;
  */
 public class AppStreaming {
     public static void main (String[] args){
+        
         Pelicula peliculas[] = new Pelicula[2];
         Podcast podcasts[] = new Podcast[2];
         peliculas[0] = new Pelicula();
@@ -31,9 +32,33 @@ public class AppStreaming {
         podcasts[1].titulo="vida";
         podcasts[1].duracionMinutos=60;
         podcasts[1].anfitrion="valeria";
-        podcasts[1].anioLanzamiento=2020;
-        // mirar el equals
-        //for
+        podcasts[1].anioLanzamiento=2020;  
+        
+        if (peliculas[0].equals(peliculas[1])) {
+            System.out.println("Las películas son iguales");
+        } else {
+            System.out.println("Son diferentes");
+        }
+        if (podcasts[0].equals(podcasts[1])) {
+            System.out.println("Las películas son iguales");
+        } else {
+            System.out.println("Son diferentes");
+        }
+        
+        for (Pelicula pe : peliculas){
+            System.out.println("Título: " + pe.titulo);
+            System.out.println("Director: " + pe.director);
+            System.out.println("Año: " + pe.anioLanzamiento);
+            System.out.println("Minutos de duracion: " + pe.duracionMinutos);
+        }
+        
+        for (Podcast po : podcasts){
+            System.out.println("Título: " + po.titulo);
+            System.out.println("Anfitrion: " + po.anfitrion);
+            System.out.println("Año: " + po.anioLanzamiento);
+            System.out.println("Minutos de duracion: " + po.duracionMinutos);
+        }
+        
         peliculas[1].configurarVisualizacion();
         peliculas[1].configurarVisualizacion("1080p");
         peliculas[1].configurarVisualizacion("1080p", "Español");
