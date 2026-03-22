@@ -15,7 +15,8 @@ abstract public class ContenidoMultimedia {
     
     public abstract void iniciarReproduccion();
     
-    String obtenerResumen(){
+    
+    public String obtenerResumen(){
         return ("Titulo: "+ titulo + "Anio de lanzamiento: " + anioLanzamiento);
     }
 }
