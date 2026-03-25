@@ -36,6 +36,12 @@ public class AppStreaming {
         po2.anioLanzamiento=2026;
         po2.duracionMinutos=100;
         
+        peliculas.add(p1);
+        peliculas.add(p2);
+
+        podcasts.add(po1);
+        podcasts.add(po2);
+        
         if (peliculas.get(0).equals(peliculas.get(1))) {
             System.out.println("Las películas son iguales");
         } else {
